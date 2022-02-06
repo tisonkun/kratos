@@ -2,7 +2,7 @@ name: Build Image
 
 on:
   push:
-    branches: ['main']
+    branches: ['main', 'dockerfile']
     tags: ['v*']
   pull_request:
   workflow_dispatch:
