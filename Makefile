@@ -24,9 +24,9 @@ $(LINTER):
 	curl -SL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s latest
 
 all:
-	@cd cmd/kratos && go build && cd - &> /dev/null
-	@cd cmd/protoc-gen-go-errors && go build && cd - &> /dev/null
-	@cd cmd/protoc-gen-go-http && go build && cd - &> /dev/null
+	@cd cmd/kratos && go build && cd -
+	@cd cmd/protoc-gen-go-errors && go build && cd - 
+	@cd cmd/protoc-gen-go-http && go build && cd -
 
 .PHONY: install
 install: all
